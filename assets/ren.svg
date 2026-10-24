@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="710" viewBox="0 0 560 710">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#61483d"/><stop offset=".57" stop-color="#261e24"/><stop offset="1" stop-color="#160f15"/></linearGradient>
+  <radialGradient id="light"><stop stop-color="#c99972" stop-opacity=".4"/><stop offset="1" stop-color="#c99972" stop-opacity="0"/></radialGradient>
+  <linearGradient id="face" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ddae89"/><stop offset=".5" stop-color="#be856a"/><stop offset="1" stop-color="#8a5749"/></linearGradient>
+  <linearGradient id="shirt" x1="0" x2="1"><stop stop-color="#0d1115"/><stop offset=".52" stop-color="#303337"/><stop offset="1" stop-color="#0c1014"/></linearGradient>
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".10"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+</defs>
+<rect width="560" height="710" fill="url(#bg)"/><circle cx="290" cy="240" r="310" fill="url(#light)"/>
+<g opacity=".28" stroke="#d7ad8d" stroke-width="2" fill="none"><circle cx="270" cy="228" r="200"/><circle cx="270" cy="228" r="210"/><path d="M28 600 Q300 530 539 620"/></g>
+<!-- broad upper torso and black chef's jacket -->
+<path d="M27 710 Q10 576 59 501 Q105 438 202 428 L351 429 Q462 437 512 503 Q555 566 550 710Z" fill="url(#shirt)" stroke="#0b1115" stroke-width="9"/>
+<path d="M138 476 Q188 528 275 572 Q351 538 409 474" fill="none" stroke="#707377" stroke-opacity=".65" stroke-width="4"/>
+<path d="M224 419 L213 491 L275 562 L336 492 L331 420Z" fill="#a3705b"/>
+<path d="M212 477 L271 549 L242 710 L97 710 Q93 572 147 488Z" fill="#15181d"/>
+<path d="M340 477 L277 549 L313 710 L466 710 Q467 547 403 488Z" fill="#15181d"/>
+<path d="M218 489 L277 549 L309 710" stroke="#646363" fill="none" stroke-width="3"/>
+<path d="M348 491 L277 549 L241 710" stroke="#454448" fill="none" stroke-width="3"/>
+<path d="M280 558L280 710" stroke="#6c6261" stroke-width="3"/>
+<g fill="#9e8075"><circle cx="291" cy="594" r="4"/><circle cx="294" cy="649" r="4"/></g>
+<!-- ears -->
+<path d="M130 285 Q102 271 109 327 Q114 358 151 369 M414 284 Q450 274 439 329 Q435 350 409 364" fill="#aa7059" stroke="#563a34" stroke-width="7"/>
+<!-- face mature wide jaw -->
+<path d="M140 164 Q171 85 280 83 Q392 87 415 171 L416 316 Q403 399 336 443 Q275 473 212 440 Q154 414 139 321Z" fill="url(#face)" stroke="#49322e" stroke-width="7"/>
+<!-- cheek and nose shading -->
+<path d="M140 245 Q156 203 163 207 L163 344 Q159 379 184 404 Q142 380 140 317Z" fill="#8f5d4d" opacity=".42"/>
+<path d="M404 243 Q390 291 385 340 Q379 385 354 412 Q408 377 414 318Z" fill="#6e4c43" opacity=".3"/>
+<!-- hair silhouette -->
+<path d="M128 256 Q99 198 124 139 Q132 101 169 76 Q190 35 237 51 Q274 19 314 46 Q366 35 391 83 Q429 97 430 153 Q451 192 416 268 L409 223 Q384 211 393 167 Q365 188 334 164 Q302 198 262 169 Q213 190 173 162 Q165 206 135 225Z" fill="#16191e" stroke="#1b1b1f" stroke-width="9"/>
+<path d="M166 162 Q217 118 268 151 Q306 159 348 127 M241 63 Q280 86 282 114 M341 80 Q381 104 383 132" stroke="#555254" stroke-opacity=".64" stroke-width="12" fill="none" stroke-linecap="round"/>
+<!-- brows eyes -->
+<path d="M182 252 Q220 228 255 246 M301 248 Q347 232 375 251" stroke="#2d2020" stroke-width="14" fill="none" stroke-linecap="round"/>
+<path d="M185 274 Q213 269 253 280 M304 280 Q340 269 375 273" fill="none" stroke="#302b2a" stroke-width="7" stroke-linecap="round"/>
+<path d="M210 273 Q219 290 228 276 M329 278 Q339 291 347 273" stroke="#111517" stroke-width="10" fill="none"/>
+<path d="M185 291 Q217 306 254 295 M302 294 Q346 310 374 290" stroke="#6d493f" stroke-width="4" fill="none" opacity=".5"/>
+<!-- nose -->
+<path d="M280 270 Q264 334 272 345 Q285 351 303 341" fill="none" stroke="#7e5548" stroke-width="7" stroke-linecap="round"/>
+<!-- stubble -->
+<path d="M167 350 Q197 416 240 429 Q276 448 316 428 Q363 408 389 349 Q387 407 343 443 Q286 482 225 449 Q177 424 167 350Z" fill="#342d2d" opacity=".40"/>
+<path d="M238 390 Q277 382 319 389" stroke="#412d2b" stroke-width="8" stroke-linecap="round"/>
+<path d="M247 409 Q273 416 310 406" stroke="#8e5a50" stroke-width="4" stroke-linecap="round"/>
+<path d="M188 355 L208 372 M350 369 L375 352" stroke="#503d38" stroke-width="2" opacity=".35"/>
+<!-- graphic elements -->
+<g stroke="#c58f7b" opacity=".72"><path d="M27 26h77M27 26v77M534 608v77h-77" fill="none" stroke-width="4"/></g>
+<text x="42" y="657" fill="#e5be97" font-family="serif" font-size="18" letter-spacing="6">AKIYAMA · REN</text>
+<text x="44" y="685" fill="#c8a48e" font-family="serif" font-size="14" letter-spacing="2">CHEF · MARÉ DE NORI</text>
+<rect width="560" height="710" fill="transparent" filter="url(#noise)"/>
+</svg>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#17151a" />
+<meta name="description" content="Maré de Nori — uma história particular com Ren Akiyama." />
+<title>Maré de Nori · Ren Akiyama</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="shell" id="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-art" aria-hidden="true"><img class="sakura-art" src="assets/sakura.svg" alt="" /><span class="art-kanji">海<br>苔</span><div class="art-circle"></div></div>
+    <div class="brand-line"><span class="seal">海</span><span><b>MARÉ DE NORI</b><small>物語 · HISTÓRIAS DE YOKOHAMA</small></span><button class="icon-btn mobile-close" id="closeNav" aria-label="Fechar menu">×</button></div>
+    <div class="editorial"><span class="eyebrow">夜の物語 · UMA HISTÓRIA SÓ SUA</span><h1>Um encontro<br><em>inesperado.</em></h1><p>Uma noite de chuva, o aroma de missô e um chef que não tem a menor paciência para visitas.</p><div class="sideline"></div><span class="vertical-words">YOKOHAMA · 19:42</span></div>
+    <nav class="nav" aria-label="Navegação principal">
+      <button data-view="chat" class="nav-item active"><span class="nav-symbol">✳</span> Conversa <span class="nav-arrow">↗</span></button>
+      <button data-view="profile" class="nav-item"><span class="nav-symbol">花</span> Quem é Ren</button>
+      <button data-view="memories" class="nav-item"><span class="nav-symbol">◈</span> Memórias</button>
+      <button data-view="settings" class="nav-item"><span class="nav-symbol">⚙</span> Ajustes</button>
+    </nav>
+    <div class="sidebar-footer"><div class="chibi-stamp"><img src="assets/ren-chibi.webp" alt="Ren chibi rabugento preparando nigiri" /></div><div><span>UMA HISTÓRIA PARTICULAR</span><small>Beta 0.2.1 · Salvo neste dispositivo</small></div></div>
+  </aside>
+  <div class="sidebar-mask" id="sidebarMask"></div>
+  <main class="main">
+    <header class="topbar">
+      <div class="top-left"><button class="icon-btn hamburger" id="openNav" aria-label="Abrir menu">☰</button><span class="top-breadcrumb">MARÉ DE NORI <span>／</span> <b id="breadcrumb">CONVERSA</b></span></div>
+      <div class="top-right"><span class="privacy-note"><span class="tiny-lock">◇</span> ESPAÇO PARTICULAR</span><span class="mode-pill" id="modePill">◦ DEMONSTRAÇÃO</span><button class="icon-btn top-menu" id="moreBtn" title="Menu de ações" aria-label="Ações">···</button></div>
+      <div class="popup" id="moreMenu" hidden><button id="exportBtn">↓ Exportar conversa (.txt)</button><button id="exportJsonBtn">⇩ Fazer backup (.json)</button><button id="importBtn">⇧ Restaurar backup</button><button class="danger" id="resetBtn">↺ Recomeçar história</button></div>
+    </header>
+    <section class="view view-chat active" id="view-chat" aria-label="Conversa com Ren">
+      <div class="chat-header">
+        <div class="portrait-wrap"><img src="assets/ren-oficial.webp" alt="Retrato ilustrado de Ren Akiyama" /></div>
+        <div class="chat-header-copy"><div class="chat-title-line"><h2>Ren Akiyama</h2><span class="title-sub">秋山 蓮</span></div><p><span class="status-dot"></span> Atrás do balcão <span class="header-sep">·</span> Maré de Nori, Yokohama</p></div>
+        <button class="context-button" id="openProfile" title="Ver ficha">Sobre ele <span>↗</span></button>
+      </div>
+      <div class="scene-strip"><div class="scene-mark">一</div><span>CAPÍTULO 01</span><div class="scene-line"></div><span class="scene-time">UMA VISITA INESPERADA · SEXTA-FEIRA, 19H42</span></div>
+      <button class="jump-end" id="jumpToEnd" title="Ir ao fim da abertura">↓ Ir para a última fala</button>
+      <div class="messages-scroll" id="scrollArea"><div class="messages" id="messages"></div><div class="typing" id="typing" hidden><span></span><span></span><span></span><i>Ren está respondendo...</i></div></div>
+      <div class="chat-bottom">
+        <div class="composer-frame"><textarea id="messageInput" placeholder="O que sua crítica gastronômica diz ou faz?" rows="1" maxlength="4000" aria-label="Sua mensagem"></textarea><button class="send-btn" id="sendBtn" title="Enviar mensagem" aria-label="Enviar mensagem">↗</button></div>
+        <div class="composer-meta"><span><span id="composerHint">MODO DEMO: respostas ilustrativas, sem IA conectada.</span></span><span>ENTER envia · SHIFT + ENTER quebra linha</span></div>
+      </div>
+    </section>
+    <section class="view view-profile" id="view-profile" aria-label="Perfil do Ren">
+      <div class="page-scroll"><div class="profile-banner"><img src="assets/banner-oficial.webp" alt="Ren diante do restaurante japonês à noite, sob lanternas e flores de cerejeira" /><span>MARÉ DE NORI · YOKOHAMA</span></div><div class="page-eyebrow">ARQUIVO PESSOAL · 001</div><div class="profile-hero"><div class="profile-image"><img src="assets/ren-oficial.webp" alt="Ren Akiyama"/><span class="profile-stamp">秋山</span></div><div class="profile-intro"><span class="eyebrow">CHEF • 32 ANOS • YOKOHAMA</span><h2>Ren<br><em>Akiyama.</em></h2><p>“Meu trabalho é servir comida boa. Não participar de um concurso de simpatia.”</p><div class="profile-tags"><span>RABUGENTO</span><span>ORGULHOSO</span><span>LEAL</span><span>DESAJEITADO</span></div></div></div>
+      <div class="section-heading"><span>01 /</span><h3>O homem por trás do mau humor</h3></div><p class="long-copy">Ren é proprietário e chef do Maré de Nori, um pequeno restaurante tradicional de Yokohama. Alto, robusto, de cabelos escuros ondulados e expressão intimidadora, é competente na cozinha e péssimo em receber elogios. Sua gentileza raramente aparece nas palavras: surge nos pratos preparados com cuidado, na preocupação disfarçada de reclamação e na maneira como cuida de quem considera importante.</p>
+      <div class="facts-grid"><div><small>ALTURA</small><strong>1,87 m</strong></div><div><small>IDADE</small><strong>32 anos</strong></div><div><small>PROFISSÃO</small><strong>Chef / proprietário</strong></div><div><small>ROTINA</small><strong>Segunda é folga</strong></div></div>
+      <div class="section-heading"><span>02 /</span><h3>O restaurante e sua família</h3></div><p class="long-copy">O Maré de Nori foi fundado por Naomi, sua mãe, e Takeshi, seu avô. Ren voltou de Osaka para continuar o negócio da família: não por obrigação ou tragédia, mas porque decidiu dar continuidade à história do lugar do seu próprio jeito. Quer ampliar o restaurante sem abandonar as receitas tradicionais.</p>
+      <div class="family-grid"><article><small>MÃE • 58</small><b>Naomi Akiyama</b><p>Carinhosa, mandona, intrometida. Sabe quando o filho esconde alguma coisa.</p></article><article><small>PAI • 62</small><b>Hiroshi Akiyama</b><p>Contador bem-humorado. Seu conselho favorito começa com “quando conheci sua mãe...”.</p></article><article><small>IRMÃ • 26</small><b>Yumi Akiyama</b><p>Professora, sarcástica, especialista em constranger Ren com carinho.</p></article><article><small>AVÔ • 84</small><b>Takeshi Morita</b><p>Cofundador do restaurante, teimoso e um romântico impossível.</p></article></div>
+      <div class="section-heading"><span>03 /</span><h3>Detalhes que ele esconde</h3></div><p class="long-copy">Coleciona canecas ridículas, canta músicas antigas enquanto cozinha e cuida de um gato de rua chamado Wasabi — embora negue que goste dele. Teve pouca experiência amorosa e nenhum relacionamento duradouro. Quando começa a confiar em alguém, usa provocações para esconder a própria timidez; quando recebe carinho sincero, quase sempre perde as palavras.</p>
+      <button class="text-link" data-switch="chat">↗ Voltar para a conversa</button></div>
+    </section>
+    <section class="view view-memories" id="view-memories" aria-label="Memórias da história"><div class="page-scroll narrow"><div class="page-eyebrow">DIÁRIO · A HISTÓRIA ATÉ AQUI</div><h2 class="section-title">Pequenos <em>momentos.</em></h2><p class="long-copy">Seu histórico fica salvo neste navegador. No chat, use “Voltar aqui” para cortar um trecho ou “Editar” para mudar uma fala. As notas abaixo são independentes: revise-as manualmente se excluir acontecimentos importantes.</p><div class="memo-card"><div class="memo-head"><span>✳ NOTAS DA HISTÓRIA</span><span class="tag-small">MEMÓRIA EDITÁVEL</span></div><textarea id="memoryNotes" placeholder="Ex.: Ren descobriu que sou crítica gastronômica na terceira visita. Ele odeia quando chamo seu gato de fofinho."></textarea><button class="primary-btn" id="saveNotes">Salvar notas <span>↗</span></button><span class="helper" id="saveNotesHint">As notas serão enviadas como contexto para a IA.</span></div><div class="memo-card"><div class="memo-head"><span>◈ SEU HISTÓRICO</span><span class="tag-small">NESTE DISPOSITIVO</span></div><p id="statsLine">1 mensagem salva.</p><div class="inline-actions"><button id="memExport">Exportar conversa ↗</button><button id="memBackup">Backup JSON ↗</button></div></div><button class="text-link" data-switch="chat">← Retornar ao balcão</button></div></section>
+    <section class="view view-settings" id="view-settings" aria-label="Configurações"><div class="page-scroll narrow"><div class="page-eyebrow">PREFERÊNCIAS · SEU ESPAÇO</div><h2 class="section-title">Ajustes de <em>conversa.</em></h2><p class="long-copy">A conversa de demonstração usa frases pré-programadas. Para respostas novas, configure sua API no servidor local. A chave nunca é colocada nesta página.</p><div class="memo-card"><div class="memo-head"><span>◈ CONEXÃO</span><span class="tag-small" id="connectionBadge">DEMONSTRAÇÃO</span></div><div class="connection-status"><span class="connection-bulb" id="connectionBulb"></span><div><b id="connectionTitle">Modo de demonstração</b><p id="connectionDetail">O chat ainda funciona com respostas de exemplo, sem IA real.</p></div></div><div class="setting-row"><label for="modeSelect">Modo de conversa</label><select id="modeSelect"><option value="demo">Demonstração sem IA</option><option value="ai">IA real (servidor local)</option></select></div><button class="outline-btn" id="testConnection">Testar a IA ↗</button><p class="helper">A chave fica apenas no servidor local. Este botão faz uma chamada curta para confirmar que a IA realmente responde.</p></div><div class="memo-card"><div class="memo-head"><span>花 SUA PERSONAGEM</span><span class="tag-small">PERSONALIZAÇÃO</span></div><label class="field-label" for="criticName">Como Ren pode chamar sua crítica?</label><input id="criticName" maxlength="60" placeholder="Ex.: Gabrielly"/><label class="field-label" for="criticDetails">Detalhes opcionais da sua personagem</label><textarea id="criticDetails" class="settings-textarea" maxlength="1500" placeholder="Uma crítica gastronômica famosa, gentil, sincera..."></textarea><button class="primary-btn" id="savePersona">Salvar personagem <span>↗</span></button><span class="helper" id="savePersonaHint">A sua personagem nunca recebe falas inventadas pelo Ren.</span></div><div class="memo-card"><div class="memo-head"><span>☷ DADOS LOCAIS</span><span class="tag-small">CONTROLE SEU</span></div><div class="inline-actions"><button id="settingBackup">↓ Fazer backup</button><button id="settingImport">↑ Importar backup</button><button class="danger-text" id="settingReset">↺ Recomeçar história</button></div><p class="helper">No modo IA, as mensagens enviadas são processadas pelo provedor da API. Não publique uma chave de API nem exponha seu servidor na internet.</p></div></div></section>
+    <footer class="site-footer"><span>MARE DE NORI <i>·</i> あなたの物語</span><span>© PROTÓTIPO PARTICULAR · BETA 0.2.1</span></footer>
+  </main>
+</div>
+<input type="file" id="fileInput" accept="application/json,.json" hidden />
+<dialog class="edit-dialog" id="editDialog" aria-labelledby="editTitle">
+  <form method="dialog" id="editForm">
+    <span class="page-eyebrow">MARÉ DE NORI · SEU ROTEIRO</span>
+    <h2 id="editTitle">Editar <em>mensagem.</em></h2>
+    <p>Altere sua fala ou ação. Ao salvar, as mensagens posteriores serão removidas para que você possa continuar a história de outro jeito.</p>
+    <label for="editContent">Sua mensagem</label>
+    <textarea id="editContent" maxlength="4000" rows="7" required></textarea>
+    <small id="editCount" aria-live="polite"></small>
+    <div class="edit-actions">
+      <button type="button" id="cancelEdit" class="edit-secondary">Cancelar</button>
+      <button type="button" id="saveEdit" class="edit-secondary">Salvar sem responder</button>
+      <button type="button" id="saveEditReply" class="edit-primary">Salvar e responder ↗</button>
+    </div>
+  </form>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
